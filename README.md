@@ -26,8 +26,6 @@ The visual style and layout of this application are based on a Figma design prov
 
 ## Usage
 
-![Image](./assets/images/screenshot2.png)
-
 To use the Basketball Scoreboard:
 
 1. Visit [Basketball Scoreboard](https://adriannaderkacz.github.io/basketball-scoreboard/) to access the web app directly from your web browser. 
@@ -36,6 +34,8 @@ To use the Basketball Scoreboard:
 4. Control the game timer using the "New Game", "Pause", "Resume", and "Reset" buttons at the bottom of the screen.
 
 The application is straightforward and does not require any installation, as it can be run directly from a browser.
+
+![Image](./assets/images/screenshot2.png)
 
 ## Credits
 
