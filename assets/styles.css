@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'TimerULiL';
+    src: url(./fonts/CursedTimerUlil-Aznm.ttf) format('truetype');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./images/basketball.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'TimerULiL', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #1b244a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 40%;
+    margin-top: 50px;
+    background-color: #1b244a;
+} 
+
+.game-btns {       /* Match the width of the container to keep alignment consistent */
+    display: flex;
+    justify-content: center; /* Center buttons within this div */
+    padding: 10px;
+}
+
+.column-one, .column-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.column-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #9AABD8;
+    border-radius: 10px;
+    background-color: black;
+    padding: 5px 40px;
+}
+
+.score {
+    padding: 0px;
+    margin: 10px;
+    width: 100%;
+}
+
+.fouls {
+    margin: 5px;
+    padding: 10px;
+    width: 40%;
+}
+
+.score, .fouls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 3px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #eee;
+}
+
+button {
+    font-family: 'TimerULiL', sans-serif;
+    padding: 5px 10px;
+    color: #9AABD8;
+    background-color: #1b244a;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+}
+
+.fouls p, .timer p {
+    font-size: 2em;
+    margin: 0;
+    padding: 5px;
+    color: #F94F6D;
+}
+
+.score p {
+    font-size: 4em;
+    margin: 0;
+    padding: 5px;
+    color: #F94F6D;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 3% 2%;
+    }
+
+    .score, .fouls, .timer {
+        margin: 5px 0;
+    }
+
+    .score p, .fouls p, .timer p {
+        font-size: 4vw;
+    }
+
+    button {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    .column-one, .column-two, .column-three {
+        align-items: stretch;
+    }
+}

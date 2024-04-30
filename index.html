@@ -8,12 +8,49 @@
 </head>
 <body>
     <div class="container">
-        <div>
+        <div class="column-one">
             <h1>HOME</h1>
+            <div class="score">
+                <p id="score-home">0</p>
+            </div>
+            <div class="button-container">
+                <button onclick="scoreHomeOne()">+1</button>
+                <button onclick="scoreHomeTwo()">+2</button>
+                <button onclick="scoreHomeThree()">+3</button>
+            </div>
+            <h2>FOULS</h2>
+            <div class="fouls">
+                <p id="fouls-home">0</p>
+            </div>
+            <button onclick="flsHome()">+1</button>
         </div>
-        <div>
+        <div class="column-two">
+            <div class="timer">
+                <p id="timer">00:00</p>
+            </div>
+        </div>
+        <div class="column-three">
             <h1>GUEST</h1>
+            <div class="score">
+                <p id="score-guest">0</p>
+            </div>
+            <div class="button-container">
+                <button onclick="scoreGuestOne()">+1</button>
+                <button onclick="scoreGuestTwo()">+2</button>
+                <button onclick="scoreGuestThree()">+3</button>
+            </div>
+            <h2>FOULS</h2>
+            <div class="fouls">
+                <p id="fouls-guest">0</p>
+            </div>
+            <button onclick="flsGuests()">+1</button>
         </div>
+    </div>
+    <div class="game-btns">
+        <button id="new-game" onclick="startTimer()">New Game</button>
+        <button id="pause" onclick="pauseTimer()" hidden>Pause</button>
+        <button id="resume" onclick="resumeTimer()" hidden>Resume</button>
+        <button id="reset" onclick="resetTimer()" hidden>Reset</button>
     </div>
     <script src="./assets/script.js"></script>
 </body>
