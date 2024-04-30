@@ -124,6 +124,28 @@ button {
     color: #F94F6D;
 }
 
+/* MEDIA QUERY */
+
+@media (min-width: 769px) and (max-width: 1130px) {
+    .container {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .score p, .fouls p, .timer p {
+        font-size: 3em;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: larger;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         width: 95%;
